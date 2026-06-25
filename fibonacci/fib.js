@@ -1,5 +1,5 @@
 //ts-worksheet-with-variables
-function fib(n) {
+function fibRecursive(n) {
 	if (n <= 0) return [];
 	if (n === 1) return [0];
 	if (n === 2) return [0, 1];
@@ -17,7 +17,7 @@ function fibHateYourColleaguesEdition() {
 				: [...fib(n - 1), fib(n - 1)[n - 2] + fib(n - 1)[n - 3]];
 }
 
-function fibRec(n) {
+function fibIterative(n) {
 	return n === 0 ? [] : n === 1 ? [0] : [0, 1];
 	const ans = [0, 1];
 	for (let i = 2; i <= n; i++) {
